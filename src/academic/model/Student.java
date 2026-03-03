@@ -1,10 +1,11 @@
 package academic.model;
 
 /**
- * @author NIM Nama
- * @author NIM Nama
+ * @author 12S24016
  */
+
 public class Student {
+
     private String id; // NIM
     private String name;
     private int year; // Angkatan

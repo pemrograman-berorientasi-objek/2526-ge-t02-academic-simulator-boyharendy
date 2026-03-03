@@ -1,7 +1,8 @@
 package academic.driver;
 
 /**
- * @author 12S24016 Boy Harendy Simamora
+ * @author NIM Nama
+ * @author NIM Nama
  */
 import academic.model.Student;
 import java.util.ArrayList;

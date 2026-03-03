@@ -3,11 +3,12 @@
  * @author NIM Nama
  */
 package academic.model;
+
 public class Enrollment {
     private String courseCode;
     private String studentId;
     private String academicYear;
-    private String semester; // Tetap disimpan, tapi tidak ditampilkan di toString()
+    private String semester;
     private String grade; // Default ke "None" jika tidak ada nilai
 
     public Enrollment(String courseCode, String studentId, String academicYear, String semester) {
@@ -53,11 +54,9 @@ public class Enrollment {
         this.grade = grade;
     }
 
-    // toString method for desired output format (modifikasi untuk mengabaikan semester)
+    // toString method for desired output format
     @Override
     public String toString() {
-        // Output format requires courseCode|studentId|academicYear|None (grade)
-        // The 'semester' from input is not included in the output string representation.
-        return courseCode + "|" + studentId + "|" + academicYear + "|" + grade;
+        return courseCode + "|" + studentId + "|" + academicYear + "|" + semester + "|" + grade;
     }
 }
