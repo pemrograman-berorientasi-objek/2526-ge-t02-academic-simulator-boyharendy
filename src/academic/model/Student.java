@@ -4,9 +4,7 @@ package academic.model;
  * @author NIM Nama
  * @author NIM Nama
  */
-
 public class Student {
-
     private String id; // NIM
     private String name;
     private int year; // Angkatan

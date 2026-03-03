@@ -1,10 +1,9 @@
 package academic.model;
-
 public class Course {
     private String code;
     private String name;
     private int credits;
-    private String grade; // Assuming grade is part of the course data as per input example
+    private String grade; // Default ke "None" jika tidak ada grade (sesuai output Task 01)
 
     public Course(String code, String name, int credits, String grade) {
         this.code = code;
@@ -13,7 +12,7 @@ public class Course {
         this.grade = grade;
     }
 
-    // Getters for all fields
+    // Getters
     public String getCode() {
         return code;
     }
@@ -30,7 +29,6 @@ public class Course {
         return grade;
     }
 
-    // toString method for desired output format
     @Override
     public String toString() {
         return code + "|" + name + "|" + credits + "|" + grade;
